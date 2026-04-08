@@ -1,0 +1,28 @@
+export const cssVars = {
+  background: '210 30% 98%',
+  foreground: '210 20% 20%',
+  card: '0 0% 100%',
+  cardForeground: '210 20% 20%',
+  popover: '0 0% 100%',
+  popoverForeground: '210 20% 20%',
+  primary: '195 70% 55%',
+  primaryForeground: '0 0% 100%',
+  secondary: '210 25% 95%',
+  secondaryForeground: '210 15% 35%',
+  muted: '210 20% 92%',
+  mutedForeground: '210 15% 45%',
+  accent: '170 50% 60%',
+  accentForeground: '0 0% 100%',
+  destructive: '0 65% 60%',
+  destructiveForeground: '0 0% 100%',
+  border: '210 20% 88%',
+  input: '210 20% 88%',
+  ring: '195 70% 55%',
+  radius: '1rem',
+  glowPrimary: '195 70% 55%',
+  glowAccent: '170 50% 60%',
+  gradientStart: '195 70% 60%',
+  gradientEnd: '170 50% 55%',
+} as const;
+
+export type CssVarKey = keyof typeof cssVars;
