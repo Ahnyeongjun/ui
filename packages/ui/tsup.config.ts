@@ -7,4 +7,7 @@ export default defineConfig({
   clean: true,
   external: ['react', 'react-dom'],
   jsx: 'react-jsx',
+  banner: {
+    js: '"use client";',
+  },
 });
