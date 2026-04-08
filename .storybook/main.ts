@@ -1,5 +1,6 @@
 import type { StorybookConfig } from '@storybook/react-vite';
 import { mergeConfig } from 'vite';
+import tailwindcss from '@tailwindcss/vite';
 
 const config: StorybookConfig = {
   stories: ['../packages/ui/src/**/*.stories.@(ts|tsx)'],
@@ -10,6 +11,7 @@ const config: StorybookConfig = {
   },
   viteFinal(config) {
     return mergeConfig(config, {
+      plugins: [tailwindcss()],
       resolve: {
         alias: {
           'next/link': require.resolve('./mocks/next-link.tsx'),
